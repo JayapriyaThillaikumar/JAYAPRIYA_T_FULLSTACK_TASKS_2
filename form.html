@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+<div class="container">
+    
+    <form id="contactForm" action="#" method="POST">
+        <h2>Contact Us</h2>
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <small></small>
+        </div>
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <small></small>
+        </div>
+        <div class="form-control">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="Format: 123-456-7890" required>
+            <small>Format: 123-456-7890</small>
+            <div class="error-message">Please enter a valid phone number (e.g., 123-456-7890).</div>
+        </div>
+        <div class="form-control">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <small></small>
+        </div>
+        <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
